@@ -703,6 +703,8 @@ button {
 @media screen and (min-width: 768px) {
   .foot-cont {
     text-align: start;
+    justify-content: flex-start;
+    padding-left: 108px;
     gap: 72px 24px;
     align-items: baseline;
   }
@@ -758,9 +760,8 @@ button {
 
 .input-subscribe {
   border: 1px solid #ffffff;
-
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -770,6 +771,13 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-subscribe {
+    width: 264px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1157px) {
@@ -813,11 +821,15 @@ button {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  .foot-cont {
+    padding-left: 0;
+    gap: 0;
+  }
   .margin-right {
-    margin-right: 96px;
+    margin-right: 120px;
   }
   .social-media {
-    margin-right: 56px;
+    margin-right: 80px;
   }
 }
 
@@ -993,6 +1005,7 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   fill: transparent;
   width: 16px;
   height: 16px;
@@ -1011,6 +1024,8 @@ button {
 }
 
 .label-checkbox {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
